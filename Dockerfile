@@ -6,7 +6,7 @@ RUN cd ~ && mkdir -p /home/node/api/node_modules && chown -R node:node /home/nod
 
 WORKDIR /home/node/api
 
-RUN git clone https://github.com/thecurrentuser/Maratona-Full-Cycle-2.0.git
+RUN git clone https://github.com/RaulRory/Full-Cycle-2.0.git
 
 USER node
 COPY --chown=node:node . .
