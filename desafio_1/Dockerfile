@@ -14,5 +14,5 @@ COPY --chown=node:node . .
 RUN npm install
 
 EXPOSE 3000
-
+ resolvconf --enable-updates && resolvconf -u
 CMD ["npm", "start"]
